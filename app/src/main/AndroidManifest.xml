@@ -3,6 +3,7 @@
     package="com.example.aplikasisaya">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiSaya">
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".TabActivity" />
+        <activity android:name=".GempaActivity" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

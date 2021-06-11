@@ -33,6 +33,18 @@
         app:layout_constraintTop_toBottomOf="@+id/txtemail" />
 
     <Button
+        android:id="@+id/btnGempa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:background="@color/teal_700"
+        android:text="Menu Gempa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtphone" />
+
+    <Button
         android:id="@+id/btnkeluar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -42,5 +54,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtphone" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGempa" />
 </androidx.constraintlayout.widget.ConstraintLayout>

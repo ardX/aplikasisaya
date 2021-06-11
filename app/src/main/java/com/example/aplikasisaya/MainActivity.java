@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.txtemail)).setText(getSharedPreferences("MOBILE", 0).getString("email", ""));
         ((TextView) findViewById(R.id.txtphone)).setText(getSharedPreferences("MOBILE", 0).getString("ponsel", ""));
 
+        findViewById(R.id.btnGempa).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TabActivity.class));
+            }
+        });
         findViewById(R.id.btnkeluar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

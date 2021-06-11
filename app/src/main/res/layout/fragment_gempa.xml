@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="id.infocuaca.prosigab.activity.EarthquakeActivity">
+
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="GEMPA TERKINI"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ff0000"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judul"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25sp" />
+
+                <RelativeLayout
+                    android:id="@+id/wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/waktu"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:id="@+id/info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image">
+
+                        <ImageView
+                            android:id="@+id/Mi"
+                            android:layout_width="60sp"
+                            android:layout_height="60sp"
+                            android:layout_margin="10sp"
+                            app:srcCompat="@drawable/ic_magnitude" />
+
+                        <TextView
+                            android:id="@+id/M"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/Mi"
+                            android:layout_toEndOf="@id/Mi"
+                            android:text="Magnitude"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/magnitude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/M"
+                            android:layout_alignBottom="@id/Mi"
+                            android:layout_toEndOf="@id/Mi"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="30sp" />
+
+                        <ImageView
+                            android:id="@+id/Ki"
+                            android:layout_width="60sp"
+                            android:layout_height="60sp"
+                            android:layout_below="@id/Mi"
+                            android:layout_margin="10sp"
+                            app:srcCompat="@drawable/ic_kedalaman" />
+
+                        <TextView
+                            android:id="@+id/K"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/Ki"
+                            android:layout_toEndOf="@id/Ki"
+                            android:text="Kedalaman"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/kedalaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/K"
+                            android:layout_alignBottom="@id/Ki"
+                            android:layout_toEndOf="@id/Ki"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="30sp" />
+
+                        <ImageView
+                            android:id="@+id/Li"
+                            android:layout_width="60sp"
+                            android:layout_height="60sp"
+                            android:layout_below="@id/Ki"
+                            android:layout_margin="10sp"
+                            app:srcCompat="@drawable/ic_koordinat" />
+
+                        <TextView
+                            android:id="@+id/L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/Li"
+                            android:layout_toEndOf="@id/Li"
+                            android:text="Lokasi"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lokasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/L"
+                            android:layout_alignBottom="@id/Li"
+                            android:layout_toEndOf="@id/Li"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wrapper2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wrapper"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/Wi"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        app:srcCompat="@drawable/ic_lokasi" />
+
+                    <TextView
+                        android:id="@+id/wilayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/Wi"
+                        android:layout_toEndOf="@id/Wi"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="30sp" />
+
+
+                    <ImageView
+                        android:id="@+id/Ti"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_below="@id/wilayah"
+                        android:layout_margin="10sp"
+                        app:srcCompat="@drawable/ic_tsunami" />
+
+                    <TextView
+                        android:id="@+id/tsunami"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/Ti"
+                        android:layout_toEndOf="@id/Ti"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ff0000"
+                        android:textSize="30sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    >
+
+</androidx.constraintlayout.widget.ConstraintLayout>
