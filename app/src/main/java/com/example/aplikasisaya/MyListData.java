@@ -1,5 +1,7 @@
 package com.example.aplikasisaya;
 
+import org.osmdroid.util.GeoPoint;
+
 public class MyListData {
     private String tanggal;
     private String jam;
@@ -9,9 +11,10 @@ public class MyListData {
     private String kedalaman;
     private String wilayah;
     private String dirasakan;
+    private GeoPoint posisi;
     private int imgId;
 
-    public MyListData(String tanggal, String jam, String lintang, String bujur, String magnitude, String kedalaman, String wilayah, String dirasakan) {
+    public MyListData(String tanggal, String jam, String lintang, String bujur, String magnitude, String kedalaman, String wilayah, String dirasakan, String Coordinates) {
         this.tanggal = tanggal;
         this.jam = jam;
         this.lintang = lintang;
@@ -21,6 +24,7 @@ public class MyListData {
         this.wilayah = wilayah;
         this.dirasakan = dirasakan;
         this.imgId = Float.parseFloat(magnitude) > 5 ? 1 : 0;
+        this.posisi = new GeoPoint(Double.parseDouble(Coordinates.split(",")[0]), Double.parseDouble(Coordinates.split(",")[1]));
     }
 
     public String getTanggal() {
@@ -93,5 +97,13 @@ public class MyListData {
 
     public void setImgId(int imgId) {
         this.imgId = imgId;
+    }
+
+    public GeoPoint getPosisi() {
+        return posisi;
+    }
+
+    public void setPosisi(GeoPoint posisi) {
+        this.posisi = posisi;
     }
 }

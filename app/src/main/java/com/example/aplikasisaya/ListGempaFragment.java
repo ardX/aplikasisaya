@@ -51,7 +51,7 @@ public class ListGempaFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
         adapter = new MyListAdapter(myListData);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -96,8 +96,9 @@ public class ListGempaFragment extends Fragment {
                         String kedalaman = g.getString("Kedalaman");
                         String wilayah = g.getString("Wilayah");
                         String dirasakan = g.getString("Dirasakan");
+                        String koordinat = g.getString("Coordinates");
 
-                        MyListData gempa = new MyListData(tanggal, jam, lintang, bujur, magnitude, kedalaman, wilayah, dirasakan);
+                        MyListData gempa = new MyListData(tanggal, jam, lintang, bujur, magnitude, kedalaman, wilayah, dirasakan, koordinat);
 
                         myListData.add(gempa);
 
