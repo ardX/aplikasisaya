@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "8626039198",
+    "project_id": "mobile-8d1aa",
+    "storage_bucket": "mobile-8d1aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8626039198:android:cd3dce0997fec637ec0e8f",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8626039198-sit2osg4ababpjsmoere19mj4s3q3r5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXB1B1k7U-cE8erFZV_uHvx691gim1vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8626039198-sit2osg4ababpjsmoere19mj4s3q3r5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8626039198:android:0ff3cb088bb76b39ec0e8f",
+        "android_client_info": {
+          "package_name": "com.example.aplikasisaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8626039198-sit2osg4ababpjsmoere19mj4s3q3r5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXB1B1k7U-cE8erFZV_uHvx691gim1vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8626039198-sit2osg4ababpjsmoere19mj4s3q3r5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
